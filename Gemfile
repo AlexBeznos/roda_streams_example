@@ -18,7 +18,7 @@ group :development, :test do
   gem "pry"
 end
 
-gem "thin"
+gem "puma"
 
 gem "dotenv"
 gem "rack_csrf"
