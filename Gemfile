@@ -1,24 +1,25 @@
 source "https://rubygems.org"
 
 group :test do
-  gem "matest", "1.6.6"
+  gem "rack-test"
+  gem "rspec"
 end
 
 group :development do
-  gem "pry"
-  gem "capistrano"
+  gem "icelab-style", git: "https://github.com/icelab/icelab-style"
   gem "rake"
 
-  # gem "guard"
-  # gem "guard-rack"
-  # gem "guard-livereload"
+  gem "guard"
+  gem "guard-livereload"
+  gem "guard-rack"
+end
+
+group :development, :test do
+  gem "pry"
 end
 
 gem "thin"
-# gem "unicorn"
 
-gem "roda"
-gem "tilt"
-gem "haml"
 gem "dotenv"
 gem "rack_csrf"
+gem "roda"

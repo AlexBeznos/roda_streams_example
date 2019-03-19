@@ -1,6 +1,7 @@
-guard 'rack' do
-  watch(%r{.+})
+guard "rack" do
+  watch(/.+/)
 end
-guard 'livereload' do
-  watch(%r{.+})
+
+guard "livereload" do
+  watch(/.+/)
 end
