@@ -9,7 +9,7 @@ class StreamingExample < Roda
   plugin :environments
   self.environment = ENV["ENVIRONMENT"]
 
-  plugin :csrf, raise: true
+  #plugin :csrf, raise: true
   plugin :multi_route
   plugin :request_headers
   plugin :all_verbs
